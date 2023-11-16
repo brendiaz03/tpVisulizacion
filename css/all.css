@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 #encabezado {
@@ -117,4 +118,20 @@ footer img {
     width: 24px;
     height: 24px;
     padding-right: 0.25em;
+}
+
+.btn{
+    padding: 0.3em 0.5em;
+    border-radius: 0.3em;
+    background-color: #F97B22;
+    border: 1px solid #F97B22;
+    color: #ECE3CE;
+    font-size: 16px;
+}
+.btn:hover{
+    transition: 0.5s;
+    background-color: #ECE3CE;
+    border: 1px solid #F97B22;
+    color: #F97B22;
+    cursor: pointer;
 }
