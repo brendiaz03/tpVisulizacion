@@ -135,7 +135,7 @@ footer img {
     color: #F97B22;
     cursor: pointer;
 }
-input[type=text], input[type=date], input[type=number], input[type=email]{
+input[type=text], input[type=date], input[type=number], input[type=email], input[type=password]{
     margin-right: 1vh;
     background-color: transparent;
     font-size: 0.8em;
@@ -151,4 +151,8 @@ input[type=text], input[type=number]{
 }
 h6 {
     font-size: 20px;
+}
+a {
+    color: #FFFDF8;
+    text-decoration: none;
 }

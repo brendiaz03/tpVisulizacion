@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Repollo APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/iniciarsesion.css">
+</head>
+<body>
+
+<header>
+    <div>
+        <img src="assets/cabbage-svgrepo-com.svg" alt="Logo de Repollo App" id="logo">
+        <h2>REPOLLO APP</h2>
+    </div>
+    <div>
+        <i class="fa-solid fa-user"></i>
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Registrarme</a>
+    </div>
+</header>
+<main class="flex-row">
+    <article class="art-form">
+        <h1>Iniciar sesión</h1>
+        <form action="" id="form">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email">
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass">
+            <input type="submit" value="Iniciar sesión" class="btn" id="boton">
+        </form>
+    </article>
+    <div id="popup" class="d-none">
+        <div class="popup-content borde">
+          <p>
+            El usuario no está registrado. <br>Por favor, regístrese para acceder.
+          </p>
+          <a href="registro.html"><button id="btn-aceptar" class="btn borde">Registrarme</button></a>
+        </div>
+      </div>
+
+</main>
+
+<footer>
+    <div>
+        <h6>Co-Fouders</h6>
+        <ul>
+            <li>Diaz, Brenda</li>
+            <li>Eldahuk, Ibi</li>
+            <li>Fernández, Guadalupe</li>
+            <li>Navarro, Eliana</li>
+        </ul>
+    </div>
+    <div>
+        <h6>Menú</h6>
+        <ul>
+            <li>Inicio</li>
+            <li>Ingresar</li>
+            <li>Contacto</li>
+            <li>Acerca de nosotros</li>
+        </ul>
+    </div>
+    <div>
+        <h6>Sigamos en contacto</h6>
+        <ul>
+            <li>
+                <i class="fa-brands fa-twitter"></i>
+                <p>&nbsp;&nbsp;&nbsp;@repolloapp</p>
+            </li>
+            <li>
+                <i class="fa-brands fa-instagram"></i>
+                <p>&nbsp;&nbsp;&nbsp;@repolloapp</p>
+            </li>
+            <li>
+                <i class="fa-brands fa-facebook"></i>
+                <p>&nbsp;&nbsp;&nbsp;/RepolloApp</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+<script>
+    let formulario = document.getElementById("form");
+    formulario.addEventListener("submit", (e) => {
+        e.preventDefault();
+    });
+    let boton = document.getElementById("boton");
+    let popup = document.getElementById("popup");
+    boton.addEventListener("click", popupfunc)
+    function popupfunc(){
+        popup.classList.remove("d-none");
+        console.log("hola")
+    }
+</script>
+</html>
