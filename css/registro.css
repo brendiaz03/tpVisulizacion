@@ -31,10 +31,11 @@ article{
 input[type=text], input[type=date], input[type=number]{
     margin-right: 1vh;
     background-color: transparent;
-  font-size: 0.8em;
-  border: none;
-  border-bottom: 1px solid #F97B22;
-  outline: none;
-  color: black;
-  padding-bottom: 0.3em;
+    font-size: 0.8em;
+    border: none;
+    border-bottom: 1px solid #F97B22;
+    outline: none;
+    color: black;
+    padding-bottom: 0.3em;
+    margin: 0 1em 1em 0;
 }
