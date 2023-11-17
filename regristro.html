@@ -9,7 +9,7 @@
 
     <!--icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/registro.css">
 </head>
 <body>
 
@@ -24,11 +24,47 @@
         <a href="#">Registrarme</a>
     </div>
 </header>
-<main>
-    <h1>PLANES DE ALIMENTACIÓN<br>SEGÚN TUS NECESIDADES</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    <a href="#" class="btn">¡Registrate gratis!</a>
-    <img src="assets/filete-pollo-cubierto-sesamo-blanco-guisantes-tomates-brocoli-calabaza-plato-blanco-removebg-preview%201.png" alt="Plato saludable">
+<main class="flex-row">
+    <article class="art-form">
+        <h1>Registrarme</h1>
+        <form action="">
+            <div class="flex-row">
+                <div class="flex-column">
+                    <label for="nombre">Nombre</label>
+                    <input type="text">
+                </div>
+                <div class="flex-column">
+                    <label for="apellido">Apellido</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="flex-column">
+                <label for="correo">Correo electrónico</label>
+                <input type="text">
+            </div>
+            <div class="flex-column">
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date">
+            </div>
+            <div class="flex-row">
+                <div class="flex-column">
+                    <label for="peso">Peso en kg</label>
+                    <input type="number">
+                </div>
+                <div class="flex-column">
+                    <label for="altura">Altura en cms</label>
+                    <input type="number">
+                </div>
+            </div>
+            <input type="submit" value="Registrarme" class="btn">
+        </form>
+    </article>
+    <article>
+        <img src="assets/registro.jpg" alt="Imagen de alimentos saludables">
+    </article>
+    
+
+
 </main>
 
 <footer>
