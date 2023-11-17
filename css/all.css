@@ -135,3 +135,24 @@ footer img {
     color: #F97B22;
     cursor: pointer;
 }
+input[type=text], input[type=date], input[type=number], input[type=email], input[type=password]{
+    margin-right: 1vh;
+    background-color: transparent;
+    font-size: 0.8em;
+    border: none;
+    border-bottom: 1px solid #F97B22;
+    outline: none;
+    color: black;
+    padding-bottom: 0.3em;
+    margin: 0 1em 1.5em 0;
+}
+input[type=text], input[type=number]{
+    width: 25vh;
+}
+h6 {
+    font-size: 20px;
+}
+a {
+    color: #FFFDF8;
+    text-decoration: none;
+}

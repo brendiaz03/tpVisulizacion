@@ -9,7 +9,7 @@
 
     <!--icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/iniciarsesion.css">
 </head>
 <body>
 
@@ -26,44 +26,23 @@
 </header>
 <main class="flex-row">
     <article class="art-form">
-        <h1>Registrarme</h1>
-        <form action="">
-            <div class="flex-row">
-                <div class="flex-column">
-                    <label for="nombre">Nombre</label>
-                    <input type="text">
-                </div>
-                <div class="flex-column">
-                    <label for="apellido">Apellido</label>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="flex-column">
-                <label for="correo">Correo electrónico</label>
-                <input type="text">
-            </div>
-            <div class="flex-column">
-                <label for="fecha">Fecha de nacimiento</label>
-                <input type="date">
-            </div>
-            <div class="flex-row">
-                <div class="flex-column">
-                    <label for="peso">Peso en kg</label>
-                    <input type="number">
-                </div>
-                <div class="flex-column">
-                    <label for="altura">Altura en cms</label>
-                    <input type="number">
-                </div>
-            </div>
-            <input type="submit" value="Registrarme" class="btn">
+        <h1>Iniciar sesión</h1>
+        <form action="" id="form">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email">
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass">
+            <input type="submit" value="Iniciar sesión" class="btn" id="boton">
         </form>
     </article>
-    <article>
-        <img src="assets/registro.jpg" alt="Imagen de alimentos saludables">
-    </article>
-    
-
+    <div id="popup" class="d-none">
+        <div class="popup-content borde">
+          <p>
+            El usuario no está registrado. <br>Por favor, regístrese para acceder.
+          </p>
+          <a href="registro.html"><button id="btn-aceptar" class="btn borde">Registrarme</button></a>
+        </div>
+      </div>
 
 </main>
 
@@ -105,4 +84,17 @@
     </div>
 </footer>
 </body>
+<script>
+    let formulario = document.getElementById("form");
+    formulario.addEventListener("submit", (e) => {
+        e.preventDefault();
+    });
+    let boton = document.getElementById("boton");
+    let popup = document.getElementById("popup");
+    boton.addEventListener("click", popupfunc)
+    function popupfunc(){
+        popup.classList.remove("d-none");
+        console.log("hola")
+    }
+</script>
 </html>

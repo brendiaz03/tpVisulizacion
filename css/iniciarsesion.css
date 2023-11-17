@@ -1,0 +1,50 @@
+@import url(all.css);
+form{
+    display: flex;
+    flex-direction: column;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+input[type=email], input[type=password]{
+    width: 50vh;
+}
+main{
+    background-color: #FFFDF8;
+}
+h1{
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    text-align: start;
+}
+.btn{
+    margin-top: 1.5em;
+    width: 15vh;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #4F6F52;
+    font-weight: 700;
+    color: black;
+    padding: 1em;
+    width: 25em;
+  }
+  .popup-content p{
+    padding-bottom: 2em;
+  }
+
+  .d-none{
+    display: none;
+  }
