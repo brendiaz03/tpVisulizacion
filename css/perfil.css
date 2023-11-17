@@ -1,0 +1,13 @@
+.conteiner{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    background-color: hsla(43, 42%, 87%, 0.59);
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.foto img{
+    width: 200px;
+    height: 250px;
+}
