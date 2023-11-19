@@ -1,13 +1,43 @@
-.conteiner{
-    width: 70%;
-    height: 50%;
+@import url(all.css);
+main{
+    background-color: #FFFDF8;
+}
+article{
+    background-color: #ECE3CE;
+    margin: 1vh auto;
+    width: 75%;
+    padding: 2vh;
+    border-radius: 0.5rem;
+}
+span{
+    font-weight: 700;
+}
+.personal {
     display: flex;
-    background-color: hsla(43, 42%, 87%, 0.59);
-    justify-content: space-around;
-    margin: 50px 0;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.foto img{
-    width: 200px;
-    height: 250px;
+.btn {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+input[type=text], input[type=date], input[type=number], select, input[type=email], input[type=password]{
+    display: block;
+    width: 100%;
+}
+
+h2, h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+input[type=checkbox]{
+    height: 20px; /* Altura del checkbox personalizado */
+    width: 20px; /* Ancho del checkbox personalizado */
+    background-color: #eee; /* Color de fondo del checkbox no seleccionado */
+    border: 1px solid #ccc; /* Borde del checkbox */
+    border-radius: 4px;
 }
