@@ -41,3 +41,22 @@ input[type=checkbox]{
     border: 1px solid #ccc; /* Borde del checkbox */
     border-radius: 4px;
 }
+
+@media screen and (max-width: 600px){
+    .personal{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    input[type=text], input[type=date], input[type=email], input[type=number],select{
+        height: 3.125em;
+    }
+    .cont-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    article{
+        margin: 5vh auto;;
+    }
+
+}

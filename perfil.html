@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repollo APP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,24 +20,23 @@
 
     <header id="encabezado">
         <div class="header-uno">
-            <div>
-                <img src="assets/cabbage-svgrepo-com.svg" alt="Logo de Repollo App" id="logo">
-                <h2>REPOLLO APP</h2>
-            </div>
-            <div>
-                <a href="#">Ayuda</a>
-                <a href="#">Mi cuenta</a>
-                <img src="assets/user.jpg" alt="Imagen de usuario" style="width:70px; border-radius:50%">
-            </div>
+            <img src="assets/cabbage-svgrepo-com.svg" alt="Logo de Repollo App" id="logo">
+            <h2>REPOLLO APP</h2>
         </div>
-        <nav class="header-dos">
-            <ul>
-                <li><a href="">Perfil</a></li>
-                <li><a href="">Dieta</a></li>
-                <li><a href="">Progreso</a></li>
-            </ul>
-        </nav>
+        <div class="header-dos">
+            <a href="#">Ayuda</a>
+            <a href="#" class="nowrap mi-cuenta">Mi cuenta</a>
+            <img src="assets/user.jpg" alt="Imagen de usuario" style="width:70px; border-radius:50%">
+        </div>
+        
     </header>
+    <nav>
+        <ul>
+            <li><a href="">Perfil</a></li>
+            <li><a href="">Dieta</a></li>
+            <li><a href="">Progreso</a></li>
+        </ul>
+    </nav>
     <main>
 
         <article class="personal">
@@ -47,7 +47,9 @@
                 <p><span>Correo electrónico:</span> linam@gmail.com</p>
                 <p><span>Altura:</span> 167cm</p>
                 <p><span>Peso:</span> 26 años</p>
-                <a href="" class="btn"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;&nbsp;Modificar datos</a>
+                <div class="cont-btn">
+                    <a href="" class="btn"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;&nbsp;Modificar datos</a>
+                </div>
             </div>
             <img src="assets/user.jpg" alt="Imagen de usuario" style="width: 150px; border-radius: 50%;">
         </article>
@@ -84,13 +86,13 @@
                 </div>
                 <div>
                     <h2>Preferencias</h2>
-                    <label for="">Restricciones dietéticas</label>
-                    <div><input type="checkbox" name="" id=""><label for="">&nbsp;&nbsp;&nbsp;Celiaquía</label></div>
+                    <label for="" >Restricciones dietéticas</label>
+                    <div style="margin-top: 0.938em;"><input type="checkbox" name="" id=""><label for="">&nbsp;&nbsp;&nbsp;Celiaquía</label></div>
                     <div><input type="checkbox" name="" id=""><label for="">&nbsp;&nbsp;&nbsp;Vegetarianismo</label></div>
                     <div><input type="checkbox" name="" id=""><label for="">&nbsp;&nbsp;&nbsp;Veganismo</label></div>
                     <div><input type="checkbox" name="" id=""><label for="">&nbsp;&nbsp;&nbsp;Dieta sin azúcar</label></div>
                     <div><input type="checkbox" name="" id=""><label for="">&nbsp;&nbsp;&nbsp;Dieta sin sal</label></div>
-                    <div><input type="checkbox" name="" id=""><label for="">&nbsp;&nbsp;&nbsp;Dieta sin sal</label></div>
+                    <div style="margin-bottom: 1.563em;"><input type="checkbox" name="" id=""><label for="">&nbsp;&nbsp;&nbsp;Dieta sin sal</label></div>
 
                     <label for="">Preferencias</label>
                     <input type="text">
@@ -103,7 +105,9 @@
                     
                 </div>
             </form>
-            <a href="" class="btn"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;&nbsp;Enviar datos</a>
+            <div class="cont-btn">
+                <a href="" class="btn"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;&nbsp;Enviar datos</a>
+            </div>
         </article>
 
 

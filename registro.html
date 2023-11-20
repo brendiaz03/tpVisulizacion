@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repollo APP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +19,10 @@
         <img src="assets/cabbage-svgrepo-com.svg" alt="Logo de Repollo App" id="logo">
         <h2>REPOLLO APP</h2>
     </div>
-    <div class="header-dos>
+    <div class="header-dos">
         <i class="fa-solid fa-user"></i>
-        <a href="iniciarsesion.html">Iniciar sesión</a>
-        <a href="registro.html">Registrarme</a>
+        <a href="iniciarsesion.html" class="nowrap">Iniciar sesión</a>
+        <a href="registro.html">Registro</a>
     </div>
 </header>
 <main class="flex-row">
@@ -56,10 +57,12 @@
                     <input type="number">
                 </div>
             </div>
-            <input type="submit" value="Registrarme" class="btn">
+            <div class="cont-btn">
+                <input type="submit" value="Registrarme" class="btn">
+            </div>
         </form>
     </article>
-    <article>
+    <article class="cont-img">
         <img src="assets/registro.jpg" alt="Imagen de alimentos saludables">
     </article>
     
