@@ -48,3 +48,16 @@ h1{
   .d-none{
     display: none;
   }
+
+  @media screen and (max-width: 37.5em){
+    #boton{
+        width: 50%;
+    }
+    .cont-btn{
+        display: flex;
+        justify-content: center;
+    }
+    input{
+        height: 3.125em;
+    }
+  }
