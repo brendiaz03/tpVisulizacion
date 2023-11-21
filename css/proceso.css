@@ -11,27 +11,55 @@ article{
 }
 
 .peso{
-    display: flex;
+   /* display: flex;
     justify-content: space-between;
     align-items: start;
-    flex-direction: row;
+    flex-direction: row;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el contenedor en 2 columnas iguales */
+    grid-gap: 5%; /* Espacio entre las celdas */
 }
 
 .btn {
-    margin-top: 20px;
     display: inline-block;
+    margin-bottom: 5%;
 }
 
 h1{
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 3vw;
+    margin-bottom: 5%;
     font-weight: 800;
 }
 h2{
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 1em;
+    margin-bottom: 0.625em;;
 }
 
 p{
     width: 70%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        width: 80%; /* Cambia el ancho del artículo para pantallas más pequeñas */
+        padding: 3vh; /* Ajusta el padding para pantallas más pequeñas */
+        height: 60%;
+    }
+    .peso{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        padding: 3vh;
+        height: 60%;
+    }
+    p {
+        width: 100%; /* Haz que los párrafos ocupen todo el ancho en pantallas más pequeñas */
+    }
 }
