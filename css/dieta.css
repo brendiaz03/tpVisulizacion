@@ -1,0 +1,37 @@
+@import url(all.css);
+
+main{
+    background-color: #FFFDF8;
+}
+
+article{
+    background-color: #ECE3CE;
+    margin: 5vh auto;
+    width: 70%;
+    padding: 5vh;
+    border-radius: 0.5rem;
+}
+
+.resumen p {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.alimentos-sugeridos div {
+    margin: 1.5em 0;
+}
+
+.alimentos-sugeridos p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.alimentos-sugeridos div img {
+    width: 1.25em;
+    height: 1.25em;
+}
