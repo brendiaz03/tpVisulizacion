@@ -16,7 +16,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-img{
+.img-reg{
     height: 90vh;
 }
 article{
