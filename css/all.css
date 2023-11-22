@@ -40,9 +40,8 @@ header * {
 }
 
 .header-dos {
+    background-color: hsla(126, 17%, 46%, 0.75);
     height: 50px;
-    display: flex;
-    align-items: center;
 }
 .header-dos a{
     margin: 0 15px;
@@ -51,7 +50,7 @@ header * {
 .header-dos ul{
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 12px;
 }
 .nowrap{
@@ -177,54 +176,18 @@ input[type=text], input[type=number]{
 h6 {
     font-size: 20px;
 }
-
-nav{
-    background-color: hsla(25, 96%, 55%, 0.75);
-    width: 80%;
-    border-radius: 5px;
-    margin: 0 auto;
-}
-nav a{
-    color: #FFFDF8;
-    text-decoration: none;
-}
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
- 
-}
-ul{
-    list-style-type: none;
-}
 @media screen and (max-width: 600px){
-    #encabezado{
+    header{
         width: 100%;
-        padding: 0;
-        position: relative;
     }
-
-    #encabezado h2{
-        display: none;
-    }
-    #encabezado div{
-        width: 60%;
-    }
-    .header-uno{
-        position: absolute;
-        right: 58%;
-    }
-    .header-dos{
-        position: absolute;
-        left: 36.5%;
-        margin-right: 0.438em;
-    }
-    .header-dos i{
+    .header-uno h2{
         display: none;
     }
     .mi-cuenta{
         display: none;
+    }
+    #logo{
+        width: 7vh;
     }
     footer{
         flex-direction: column;
