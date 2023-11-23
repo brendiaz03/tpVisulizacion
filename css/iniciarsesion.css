@@ -23,7 +23,7 @@ h1{
 }
 .btn{
     margin-top: 1.5em;
-    width: 15vh;
+    width: auto;
 }
 
 .popup-content {
@@ -47,6 +47,12 @@ h1{
 
   .d-none{
     display: none;
+  }
+  #popup i {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1vh;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 37.5em){

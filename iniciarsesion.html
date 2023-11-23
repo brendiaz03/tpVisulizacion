@@ -17,8 +17,11 @@
     <header>
         <div class="header-uno">
             <div>
-                <img src="assets/cabbage-svgrepo-com.svg" alt="Logo de Repollo App" id="logo">
-                <h2>REPOLLO APP</h2>
+                <a href="home.html" style="display: flex; flex-direction: row; align-items: center;">
+                    <img src="assets/cabbage-svgrepo-com.svg" alt="Logo de Repollo App" id="logo">
+                    <h2>REPOLLO APP</h2>
+                </a>
+
             </div>
             <div>
                 <a href="#">Ayuda</a>
@@ -40,6 +43,7 @@
     </article>
     <div id="popup" class="d-none">
         <div class="popup-content borde">
+            <i class="fa-regular fa-circle-xmark" id="cerrar"></i>
           <p>
             El usuario no está registrado. <br>Por favor, regístrese para acceder.
           </p>
@@ -51,16 +55,16 @@
 
 <footer>
     <div>
-        <h6>Co-Fouders</h6>
+        <h6>Especialistas</h6>
         <ul>
-            <li>Diaz, Brenda</li>
-            <li>Eldahuk, Ibi</li>
-            <li>Fernández, Guadalupe</li>
-            <li>Navarro, Eliana</li>
+            <li>Lic. Brenda Díaz</li>
+            <li>Ing. Ibi Eldahuk</li>
+            <li>Ing. Guadalupe Fernández</li>
+            <li>Lic. Eliana Navarro</li>
         </ul>
     </div>
     <div>
-        <h6>Menú</h6>
+        <h6>Links útiles</h6>
         <ul>
             <li><a href="home.html">Inicio</a></li>
             <li><a href="iniciarsesion.html">Ingresar</a></li>
@@ -97,7 +101,12 @@
     boton.addEventListener("click", popupfunc)
     function popupfunc(){
         popup.classList.remove("d-none");
-        console.log("hola")
+    }
+
+    let cerrar = document.getElementById("cerrar");
+    cerrar.addEventListener("click", popupcerrar);
+    function popupcerrar(){
+        popup.classList.add("d-none");
     }
 </script>
 </html>
