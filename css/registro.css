@@ -18,6 +18,7 @@ main{
 }
 .img-reg{
     height: 90vh;
+    margin: auto;
 }
 article{
     height: auto;
