@@ -54,27 +54,27 @@
         <h1>Sugerencias de alimentos para hoy</h1>
         <div>
             <p><strong>Desayuno:</strong></p>
-            <p>- Avena con plátano y almendras.<img src="assets/circle-svgrepo-com.svg"></p>
-            <p>- Yogur natural con arándanos y una cucharada de miel.<img src="assets/circle-xmark-svgrepo-com.svg"></p>
+            <p>- Avena con plátano y almendras.<img src="assets/circle-svgrepo-com.svg" id="radio1" onclick="cambiar('radio1')"></p>
+            <p>- Yogur natural con arándanos y una cucharada de miel.<img src="assets/circle-xmark-svgrepo-com.svg" id="radio2" onclick="cambiar('radio2')"></p>
         </div>
         <div>
             <p><strong>Almuerzo:</strong></p>
-            <p>- Ensalada de pollo a la parrilla con espinacas, tomate y aguacate.<img src="assets/circle-svgrepo-com.svg"></p>
-            <p>- Quinoa cocida como acompañamiento.<img src="assets/circle-svgrepo-com.svg"></p>
+            <p>- Ensalada de pollo a la parrilla con espinacas, tomate y aguacate.<img src="assets/circle-svgrepo-com.svg" id="radio3" onclick="cambiar('radio3')"></p>
+            <p>- Quinoa cocida como acompañamiento.<img src="assets/circle-svgrepo-com.svg" id="radio4" onclick="cambiar('radio4')"></p>
         </div>
         <div>
             <p><strong>Merienda:</strong></p>
-            <p>- Batido de proteínas con leche, plátano y una cucharada de mantequilla de almendra.<img src="assets/circle-svgrepo-com.svg"></p>
+            <p>- Batido de proteínas con leche, plátano y una cucharada de mantequilla de almendra.<img src="assets/circle-svgrepo-com.svg" id="radio5" onclick="cambiar('radio5')"></p>
         </div>
         <div>
             <p><strong>Cena:</strong></p>
-            <p>- Salmón al horno con brócoli y quinoa.<img src="assets/circle-svgrepo-com.svg"></p>
-            <p>- Ensalada mixta con aderezo de aceite de oliva.<img src="assets/circle-svgrepo-com.svg"></p>
+            <p>- Salmón al horno con brócoli y quinoa.<img src="assets/circle-svgrepo-com.svg" id="radio6" onclick="cambiar('radio6')"></p>
+            <p>- Ensalada mixta con aderezo de aceite de oliva.<img src="assets/circle-svgrepo-com.svg" id="radio7" onclick="cambiar('radio7')"></p>
         </div>
         <div>
             <p><strong>Snacks Saludables:</strong></p>
-            <p>- Zanahorias baby con hummus.<img src="assets/circle-svgrepo-com.svg"></p>
-            <p>- Puñado de nueces y almendras<img src="assets/circle-svgrepo-com.svg"></p>
+            <p>- Zanahorias baby con hummus.<img src="assets/circle-svgrepo-com.svg" id="radio8" onclick="cambiar('radio8')"></p>
+            <p>- Puñado de nueces y almendras<img src="assets/circle-svgrepo-com.svg" id="radio9" onclick="cambiar('radio9')"></p>
         </div>
         <a href="" class="btn"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;&nbsp;Ingresar otro alimento</a>
     </article>
@@ -116,6 +116,18 @@
         </ul>
     </div>
 </footer>
+
+<script>
+    function cambiar(id) {
+        let elemento = document.getElementById(id);
+        if (elemento.getAttribute("src") == "assets/circle-svgrepo-com.svg") {
+            elemento.setAttribute("src", "assets/circle-xmark-svgrepo-com.svg");
+        } else {
+            elemento.setAttribute("src", "assets/circle-svgrepo-com.svg");
+        }
+    }
+</script>
+
 </body>
 
 </html>
