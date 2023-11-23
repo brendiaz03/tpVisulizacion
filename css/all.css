@@ -143,6 +143,15 @@ footer img {
     padding-right: 0.25em;
 }
 
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 .btn{
     padding: 0.3em 0.5em;
     border-radius: 0.3em;
