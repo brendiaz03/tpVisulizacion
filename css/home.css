@@ -1,7 +1,7 @@
 @import url(all.css);
 * {
     margin: 0;
-    font-size: 12px;
+    font-size:16px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -47,3 +47,7 @@ main img {
     z-index: -1;
 }
 
+ footer {
+    position: fixed;
+    bottom: 0;
+ }
